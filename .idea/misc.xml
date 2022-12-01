@@ -5,10 +5,13 @@
       <map>
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.19610507246376813" />
         <entry key="app/src/main/res/layout/card_menu_fragment.xml" value="0.19610507246376813" />
+        <entry key="app/src/main/res/layout/gem_card_list_item.xml" value="0.1" />
         <entry key="app/src/main/res/layout/gem_page_fragment.xml" value="0.1" />
         <entry key="app/src/main/res/layout/home_fragment.xml" value="0.19610507246376813" />
+        <entry key="app/src/main/res/layout/relic_card_list_item.xml" value="0.20018115942028986" />
         <entry key="app/src/main/res/layout/relic_page_fragment.xml" value="0.1" />
         <entry key="app/src/main/res/layout/setup_fragment.xml" value="0.19610507246376813" />
+        <entry key="app/src/main/res/layout/spell_card_list_item.xml" value="0.20018115942028986" />
         <entry key="app/src/main/res/layout/spell_page_fragment.xml" value="0.1" />
       </map>
     </option>
