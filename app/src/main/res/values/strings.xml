@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">AeonsEndGameSetup</string>
+    <string name="card_menu">CARD MENU</string>
+    <string name="gem_card">GEMS</string>
+    <string name="relic_card">RELICS</string>
+    <string name="spell_card">SPELLS</string>
+    <string name="game_setup">SETUP GAME</string>
 </resources>

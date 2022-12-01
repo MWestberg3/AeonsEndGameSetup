@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import com.mwestberg3.aeonsendgamesetup.databinding.HomeFragmentBinding
 
 
@@ -13,9 +14,15 @@ class HomeFragment: Fragment() {
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         val binding = HomeFragmentBinding.inflate(inflater, container, false)
+        binding.cardMenuButton.setOnClickListener {
+            findNavController().navigate(R.id.action_homeFragment_to_cardMenuFragment)
+        }
+        binding.setupButton.setOnClickListener {
+            findNavController().navigate(R.id.action_homeFragment_to_setupFragment)
+        }
 
-        return super.onCreateView(inflater, container, savedInstanceState)
+        return binding.root
     }
 }

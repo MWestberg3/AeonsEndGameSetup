@@ -7,6 +7,12 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.mwestberg3.aeonsendgamesetup.databinding.RelicPageFragmentBinding
 
+data class RelicCard(
+    val name: String,
+    val description: String,
+    val cost: String
+)
+
 class RelicPageFragment: Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater,

@@ -11,10 +11,10 @@
         android:label="HomeFragment"
         tools:layout="@layout/home_fragment">
         <action
-            android:id="@+id/action_homeFragment_to_facultyFragment"
+            android:id="@+id/action_homeFragment_to_cardMenuFragment"
             app:destination="@id/cardMenuFragment" />
         <action
-            android:id="@+id/action_homeFragment_to_researchFragment"
+            android:id="@+id/action_homeFragment_to_setupFragment"
             app:destination="@id/setupFragment" />
     </fragment>
     <fragment

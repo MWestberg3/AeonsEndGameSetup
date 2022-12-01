@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import com.mwestberg3.aeonsendgamesetup.databinding.CardMenuFragmentBinding
 
 class CardMenuFragment: Fragment() {
@@ -12,9 +13,19 @@ class CardMenuFragment: Fragment() {
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         val binding = CardMenuFragmentBinding.inflate(inflater, container, false)
 
-        return super.onCreateView(inflater, container, savedInstanceState)
+        binding.gemButton.setOnClickListener {
+            findNavController().navigate(R.id.action_cardMenuFragment_to_gemPageFragment)
+        }
+        binding.relicButton.setOnClickListener {
+            findNavController().navigate(R.id.action_cardMenuFragment_to_relicPageFragment)
+        }
+        binding.spellButton.setOnClickListener {
+            findNavController().navigate(R.id.action_cardMenuFragment_to_spellPageFragment)
+        }
+
+        return binding.root
     }
 }
