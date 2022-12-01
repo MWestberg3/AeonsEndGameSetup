@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.mwestberg3.aeonsendgamesetup.HomeFragment"
+        android:label="HomeFragment"
+        tools:layout="@layout/home_fragment">
+        <action
+            android:id="@+id/action_homeFragment_to_facultyFragment"
+            app:destination="@id/cardMenuFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_researchFragment"
+            app:destination="@id/setupFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/cardMenuFragment"
+        android:name="com.mwestberg3.aeonsendgamesetup.CardMenuFragment"
+        android:label="CardMenuFragment"
+        tools:layout="@layout/card_menu_fragment" >
+        <action
+            android:id="@+id/action_cardMenuFragment_to_gemPageFragment"
+            app:destination="@id/gemPageFragment" />
+        <action
+            android:id="@+id/action_cardMenuFragment_to_relicPageFragment"
+            app:destination="@+id/relicPageFragment" />
+        <action
+            android:id="@+id/action_cardMenuFragment_to_spellPageFragment"
+            app:destination="@+id/spellPageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/setupFragment"
+        android:name="com.mwestberg3.aeonsendgamesetup.SetupFragment"
+        android:label="SetupFragment"
+        tools:layout="@layout/setup_fragment" />
+    <fragment
+        android:id="@+id/gemPageFragment"
+        android:name="com.mwestberg3.aeonsendgamesetup.GemPageFragment"
+        android:label="GemPageFragment"
+        tools:layout="@layout/gem_page_fragment" />
+    <fragment
+        android:id="@+id/relicPageFragment"
+        android:name="com.mwestberg3.aeonsendgamesetup.RelicPageFragment"
+        android:label="RelicPageFragment"
+        tools:layout="@layout/relic_page_fragment" />
+    <fragment
+        android:id="@+id/spellPageFragment"
+        android:name="com.mwestberg3.aeonsendgamesetup.SpellPageFragment"
+        android:label="SpellPageFragment"
+        tools:layout="@layout/spell_page_fragment" />
+
+</navigation>
